@@ -1,10 +1,24 @@
+<script setup lang="ts">
+import { ref } from "vue";
+
+let accountClick = ref(false);
+
+function clickey() {
+  console.log("Hej");
+}
+</script>
+
 <template>
   <div class="front-wrapper">
     <div class="front-container">
       <div class="front-navbar">
         <span>Gmail</span>
         <span>Bilder</span>
-        <div class="dots">
+        <div
+          class="dots"
+          v-on:click="accountClick = !accountClick"
+          :class="{ accountActive: accountClick }"
+        >
           <i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i>
