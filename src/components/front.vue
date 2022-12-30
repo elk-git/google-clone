@@ -62,7 +62,7 @@ function searchEnter() {
                 <div class="results">
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>jockibois networth</span>
+                    <span>hur äcklig är plex?</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
@@ -74,15 +74,15 @@ function searchEnter() {
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>Är jag en människa?</span>
+                    <span>vaxkev gay?</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>Vad händer om jag har sex med en hund?</span>
+                    <span>fbrp leak?</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>Enklaste rizzen</span>
+                    <span>hur doxxar jag elevateroleplay?</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
@@ -90,11 +90,11 @@ function searchEnter() {
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>Developer proffs</span>
+                    <span>elevate roleplay fbrp script?</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
-                    <span>Fivem fusk</span>
+                    <span>Fivem fusk och doxare</span>
                   </div>
                   <div class="searchresult-result">
                     <i class="fa-regular fa-clock"></i>
