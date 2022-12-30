@@ -105,7 +105,7 @@ body {
 }
 
 .accountActive {
-  background: red !important;
+  background: #313134 !important;
 }
 
 .front-search input {
@@ -194,6 +194,29 @@ body {
 
 .front-search-bild img {
   height: 14px;
+}
+
+/* apps */
+
+.dots-apps {
+  width: 328px;
+  height: 0px;
+  position: absolute;
+  margin-top: 500px;
+  margin-right: 20px;
+}
+
+.dots-apps-active {
+  height: 448px;
+}
+
+.apps-cont {
+  height: 100%;
+  width: 100%;
+  background: #2d2e30;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* SEARCHRESULT */

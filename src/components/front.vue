@@ -38,11 +38,20 @@ function searchEnter() {
         <div
           class="dots"
           v-on:click="accountClick = !accountClick"
+          @focusout="accountClick = false"
+          tabindex="1"
           :class="{ accountActive: accountClick }"
         >
           <i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i>
+        </div>
+        <div
+          class="dots-apps"
+          @click="accountClick = true"
+          :class="{ 'dots-apps-active': accountClick }"
+        >
+          <div class="apps-cont"></div>
         </div>
         <img />
       </div>
