@@ -1,6 +1,19 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
+const searches = ref([
+  "hur äcklig är plex?",
+  "Vilken stad har flest orrar?",
+  "Hur äckliga är grekar?",
+  "vaxkev gay?",
+  "fbrp leak?",
+  "hur doxxar jag elevateroleplay?",
+  "Är plex gravid",
+  "elevate roleplay fbrp script?",
+  "Fivem fusk och doxare",
+  "Är 1cm slak normalt?",
+]);
+
 let accountClick = ref(false);
 let searchbarActive = ref(false);
 let text = ref("");
@@ -60,45 +73,12 @@ function searchEnter() {
                 :class="{ searchresultGay: searchbarActive }"
               >
                 <div class="results">
-                  <div class="searchresult-result">
+                  <div
+                    class="searchresult-result"
+                    v-for="(search, index) in searches"
+                  >
                     <i class="fa-regular fa-clock"></i>
-                    <span>hur äcklig är plex?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Vilken stad har flest orrar?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Hur äckliga är grekar?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>vaxkev gay?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>fbrp leak?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>hur doxxar jag elevateroleplay?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Är plex gravid</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>elevate roleplay fbrp script?</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Fivem fusk och doxare</span>
-                  </div>
-                  <div class="searchresult-result">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Är 1cm slak normalt?</span>
+                    <span>{{ search }}</span>
                   </div>
                 </div>
                 <div class="searchresult-button">
