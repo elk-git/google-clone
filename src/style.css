@@ -159,8 +159,14 @@ body {
 
 .front-bar:hover {
   background: #303134;
+  border: 1px solid #303134;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
+.front-bar-active {
+  border: 1px solid #303134 !important;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
 .fa-xmark {
   margin-left: 1rem;
   color: #9aa0a6;
@@ -190,20 +196,23 @@ body {
 
 .searchresult {
   position: absolute;
-  display: flex;
+  display: none;
   width: 550px;
-  height: 400px;
+  height: fit-content;
   background: #303134;
-  margin-top: 430px;
-  margin-left: 685px;
+  margin-top: 20%;
   z-index: -100;
   border-radius: 20px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
   flex-direction: column;
+  border-top: 1px solid #5f6368;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .results {
-  margin-top: 55px;
   padding-left: 20px;
+  padding-top: 15px;
   display: Flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -229,6 +238,7 @@ body {
 
 .searchresultGay {
   z-index: 10;
+  display: flex;
 }
 
 /* FOOTER */

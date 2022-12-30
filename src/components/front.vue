@@ -3,61 +3,20 @@ import { ref } from "vue";
 
 let accountClick = ref(false);
 let searchbarActive = ref(false);
-let searchnoneActive = ref(false);
 let text = ref("");
+
+function searchDel() {
+  text.value = "";
+}
+
+function searchEnter() {
+  if (text.value.length > 0) {
+    window.location.replace(`https://google.com/search?q=${text.value}`);
+  }
+}
 </script>
 
 <template>
-  <div class="searchresult" :class="{ searchresultGay: searchbarActive }">
-    <div class="results">
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>jockibois networth</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Vilken stad har flest orrar?</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Hur äckliga är grekar?</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Är jag en människa?</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Vad händer om jag har sex med en hund?</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Enklaste rizzen</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Är plex gravid</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Developer proffs</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Fivem fusk</span>
-      </div>
-      <div class="searchresult-result">
-        <i class="fa-regular fa-clock"></i>
-        <span>Är 1cm slak normalt?</span>
-      </div>
-    </div>
-    <div class="searchresult-button">
-      <div class="search-buttons">
-        <button>Sök på google</button>
-        <button>Jag har tur</button>
-      </div>
-    </div>
-  </div>
   <div class="front-wrapper">
     <div class="front-container">
       <div class="front-navbar">
@@ -80,20 +39,81 @@ let text = ref("");
             src="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.8-ladc.gif"
             alt=""
           />
-          <div class="front-bar" :class="{ searchActive: searchbarActive }">
+          <div
+            class="front-bar"
+            :class="{
+              searchActive: searchbarActive,
+              'front-bar-active': searchbarActive,
+            }"
+          >
             <div class="front-bar-cont">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
                 type="text"
+                @keyup.enter="searchEnter"
                 v-model="text"
                 @blur="searchbarActive = !searchbarActive"
                 @focus="searchbarActive = !searchbarActive"
               />
+              <div
+                class="searchresult"
+                :class="{ searchresultGay: searchbarActive }"
+              >
+                <div class="results">
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>jockibois networth</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Vilken stad har flest orrar?</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Hur äckliga är grekar?</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Är jag en människa?</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Vad händer om jag har sex med en hund?</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Enklaste rizzen</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Är plex gravid</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Developer proffs</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Fivem fusk</span>
+                  </div>
+                  <div class="searchresult-result">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Är 1cm slak normalt?</span>
+                  </div>
+                </div>
+                <div class="searchresult-button">
+                  <div class="search-buttons">
+                    <button>Sök på google</button>
+                    <button>Jag har tur</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="front-bar-cont">
               <div
                 class="search-none searchnoneActive"
                 v-if="text.length !== 0"
+                @click="searchDel"
               >
                 <i class="fa-solid fa-xmark"></i>
                 <span class="front-search-none-span"></span>
