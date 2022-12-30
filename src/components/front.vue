@@ -3,7 +3,6 @@ import { ref } from "vue";
 
 let accountClick = ref(false);
 let searchbarActive = ref(false);
-let searchBar = ref(false);
 </script>
 
 <template>
@@ -80,19 +79,26 @@ let searchBar = ref(false);
             alt=""
           />
           <div class="front-bar" :class="{ searchActive: searchbarActive }">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" @focus="searchbarActive = !searchbarActive" />
-            <div class="search-none">
-              <i class="fa-solid fa-xmark"></i>
-              <span class="front-search-none-span"></span>
+            <div class="front-bar-cont">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" @focus="searchbarActive = !searchbarActive" />
             </div>
-            <div class="front-search-bild">
-              <img
-                src="https://www.gstatic.com/inputtools/images/tia.png"
-                alt=""
-              />
-              <i class="fa-solid fa-microphone-lines"></i>
-              <i class="fa-solid fa-camera-retro"></i>
+            <div class="front-bar-cont">
+              <div
+                class="search-none"
+                :class="{ searchnoneActive: searchbarActive }"
+              >
+                <i class="fa-solid fa-xmark"></i>
+                <span class="front-search-none-span"></span>
+              </div>
+              <div class="front-search-bild">
+                <img
+                  src="https://www.gstatic.com/inputtools/images/tia.png"
+                  alt=""
+                />
+                <i class="fa-solid fa-microphone-lines"></i>
+                <i class="fa-solid fa-camera-retro"></i>
+              </div>
             </div>
           </div>
           <div class="search-buttons">
