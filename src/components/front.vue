@@ -3,6 +3,8 @@ import { ref } from "vue";
 
 let accountClick = ref(false);
 let searchbarActive = ref(false);
+let searchnoneActive = ref(false);
+let text = ref("");
 </script>
 
 <template>
@@ -81,12 +83,17 @@ let searchbarActive = ref(false);
           <div class="front-bar" :class="{ searchActive: searchbarActive }">
             <div class="front-bar-cont">
               <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" @focus="searchbarActive = !searchbarActive" />
+              <input
+                type="text"
+                v-model="text"
+                @blur="searchbarActive = !searchbarActive"
+                @focus="searchbarActive = !searchbarActive"
+              />
             </div>
             <div class="front-bar-cont">
               <div
-                class="search-none"
-                :class="{ searchnoneActive: searchbarActive }"
+                class="search-none searchnoneActive"
+                v-if="text.length !== 0"
               >
                 <i class="fa-solid fa-xmark"></i>
                 <span class="front-search-none-span"></span>
