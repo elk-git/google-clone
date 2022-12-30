@@ -2,19 +2,42 @@
   <div class="front-wrapper">
     <div class="front-container">
       <div class="front-navbar">
-        <span></span>
-        <span></span>
+        <span>Gmail</span>
+        <span>Bilder</span>
         <div class="dots">
           <i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i
           ><i class="fa-solid fa-ellipsis-vertical"></i>
         </div>
+        <img />
       </div>
-      <div class="front-search">
-        <img src="" alt="" />
-        <input type="text" />
-        <button>Sök på google</button>
-        <button>Jag har tur</button>
+      <div class="front-search-container">
+        <div class="front-search">
+          <img
+            src="https://www.google.com/logos/doodles/2022/seasonal-holidays-2022-6753651837109831.8-ladc.gif"
+            alt=""
+          />
+          <div class="front-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" />
+            <div class="search-none">
+              <i class="fa-solid fa-xmark"></i>
+              <span class="front-search-none-span"></span>
+            </div>
+            <div class="front-search-bild">
+              <img
+                src="https://www.gstatic.com/inputtools/images/tia.png"
+                alt=""
+              />
+              <i class="fa-solid fa-microphone-lines"></i>
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+          </div>
+          <div class="search-buttons">
+            <button>Sök på google</button>
+            <button>Jag har tur</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
