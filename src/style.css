@@ -155,6 +155,8 @@ body {
   background: #303134;
   border-bottom-right-radius: 0px !important;
   border-bottom-left-radius: 0px !important;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
 }
 
 .front-bar:hover {
@@ -197,10 +199,11 @@ body {
 .searchresult {
   position: absolute;
   display: none;
-  width: 550px;
+  width: 552px;
+  margin-left: -1px;
   height: fit-content;
   background: #303134;
-  margin-top: 20%;
+  margin-top: 25rem;
   z-index: -100;
   border-radius: 20px;
   border-top-right-radius: 0px;
@@ -212,7 +215,7 @@ body {
 
 .results {
   padding-top: 5px;
-  display: Flex;
+  display: flex;
   flex-direction: column;
 }
 
