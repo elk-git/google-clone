@@ -211,11 +211,13 @@ body {
 }
 
 .results {
-  padding-left: 20px;
-  padding-top: 15px;
+  padding-top: 5px;
   display: Flex;
   flex-direction: column;
-  gap: 0.5rem;
+}
+
+.results:hover {
+  cursor: pointer;
 }
 
 .searchresult-result i {
@@ -230,10 +232,20 @@ body {
   background: #3c4043;
 }
 
+.searchresult-result:hover {
+  background: #3c4043;
+  cursor: pointer;
+}
+
+.searchresult-result {
+  padding: 5px;
+  padding-left: 17px;
+}
+
 .searchresult-result span {
   color: #c58af9;
   font-family: arial, sans-serif;
-  padding-left: 10px;
+  padding-left: 17px;
 }
 
 .searchresultGay {
