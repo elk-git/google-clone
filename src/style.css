@@ -89,7 +89,7 @@ body {
   display: flex;
   align-items: center;
 }
-
+/* Just front search bar*/
 .front-bar {
   width: 550px;
   border: 1px solid #5f6368;
