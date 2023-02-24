@@ -7,6 +7,6 @@ i'm not an clerk please dont sue, i need to feed my children, please.
 **this was fun, but easy ngl. google front ends < elk**
 made with vue 3.0
 
-<sub>if you are looking for some naughty time. contact me directly thanks goodby.</sub>
+<sub>if you are looking for some naughty time. contact me directly thanks goodby.</sub> yepo
 
 ~~my parents dont love me~~
