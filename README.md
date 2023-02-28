@@ -1,6 +1,7 @@
 # Google Clone by elk.
 
 Ive "cloned" google.com/sv because i wanted to. please dont sue me.
+committ = commit++
 
 i'm not an clerk please dont sue, i need to feed my children, please.
 
